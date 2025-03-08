@@ -1,0 +1,138 @@
+/* base.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=sans-serif&Roboto&display=swap");
+
+/* Global Variables */
+:root {
+    --primary-color: #2b547e; /* Example navy color for header */
+    --secondary-color: #613a00; /* Brown for small-screen nav */
+    --accent-color: #000; /* Black for text or nav in larger views */
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --highlight-color: #fff; /* White for text highlights */
+    --font-family: 'Roboto', sans-serif;
+    --max-width: 1200px;
+  }
+  
+  /* Reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    padding: 1rem 0;
+    border-bottom: 4px solid var(--secondary-color);
+  }
+  
+  header img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  
+  header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation (mobile) */
+  nav {
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Vertical on small screens */
+    align-items: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+  /* Main */
+  main {
+    margin-top: 1rem;
+  }
+  
+  /* Title in Main */
+  main h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Card Layout (Mobile) - stacked */
+  .card {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Learning Activities List */
+  .learning-activities ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .learning-activities ul li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 4px solid var(--secondary-color);
+  }
+  
+  footer img {
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+  }
+  
+  /* Utility classes if needed */
+  .text-sm {
+    font-size: 0.9rem;
+  }
+  

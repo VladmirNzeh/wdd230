@@ -1,0 +1,44 @@
+/* larger.css */
+@media (min-width: 768px) {
+    /* Header remains the same, but you can adjust padding if desired */
+    header {
+      padding: 1rem 2rem;
+      text-align: left;
+    }
+  
+    header span {
+      font-size: 2rem;
+    }
+  
+    /* Navigation (horizontal) */
+    nav ul {
+      flex-direction: row;
+      justify-content: center; /* or flex-start if you want them left-aligned */
+    }
+  
+    nav ul li {
+      margin: 0 1rem;
+    }
+  
+    /* Main Layout - two columns using CSS Grid */
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* The Learning Activities card is twice as wide */
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  
+    /* Cards side by side */
+    .card {
+      margin-bottom: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+  
+    /* Title in Main */
+    main h1 {
+      grid-column: 1 / 3; /* Spans across both columns if you want the title centered above cards */
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+  
