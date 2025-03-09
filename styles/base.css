@@ -104,11 +104,20 @@
     border-radius: 6px;
     border: 1px solid #ccc;
   }
+  .card h2 {
+    background-color: var(--primary-color);
+    color: var(--highlight-color);
+    text-align: center;
+    padding: 0.3rem 0;
+    border-radius: 4px 4px 0 0;
+    margin: -1rem -1rem 1rem -1rem;
+  }
   
   /* Learning Activities List */
   .learning-activities ul {
     list-style: none;
     padding-left: 0;
+    padding: ;
   }
   
   .learning-activities ul li {
