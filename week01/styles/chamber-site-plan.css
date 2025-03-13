@@ -1,0 +1,106 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7; /* Neutral background */
+    color: #333;              /* Neutral text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2d5277; /* Primary color */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navigation (Mobile-First: Vertical) */
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #2d5277; /* Primary color */
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover and Active States */
+nav a:hover {
+    background-color: #f4a261; /* Accent color on hover */
+}
+
+nav a.active {
+    background-color: #4b3621; /* Secondary color for active link */
+}
+
+/* Main Content Area */
+main {
+    max-width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    gap: 1rem;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4b3621; /* Secondary color as a left border accent */
+}
+
+/* Highlighted H2 Headings */
+h2 {
+    background-color: #f4a261; /* Accent color for heading background */
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2d5277; /* Primary color */
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Responsive Design - Larger Screens */
+@media (min-width: 768px) {
+    /* Navigation becomes horizontal */
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Main content in two columns for larger screens */
+    main {
+        grid-template-columns: 2fr 1fr; 
+    }
+}
