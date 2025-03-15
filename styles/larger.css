@@ -1,6 +1,19 @@
 /* larger.css */
 @media (min-width: 768px) {
-    /* Header remains the same, but you can adjust padding if desired */
+
+    
+  #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
     header {
       padding: 1rem 2rem;
       text-align: left;

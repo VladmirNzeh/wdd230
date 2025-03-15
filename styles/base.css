@@ -1,5 +1,4 @@
 /* base.css */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=sans-serif&Roboto&display=swap");
 
 /* Global Variables */
@@ -84,6 +83,43 @@
     text-decoration: underline;
   }
   
+  
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	padding-top: 2rem;
+	right: 2rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+
+
   /* Main */
   main {
     margin-top: 1rem;
