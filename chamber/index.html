@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamber of Commerce - WDD230</title>
+  <meta name="description" content="Chamber of Commerce site project for WDD230, developed by Emmanuel Chidiebere Nzeh." />
+  <meta name="author" content="Emmanuel Chidiebere Nzeh" />
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Chamber of Commerce - WDD230" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/chamber-hero.jpg" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- CSS: Normalize First, Then Base Styles -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- Fonts Preconnect & Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- Chamber Logo (Placeholder) -->
+    <img
+      src="images/Baboon.webp"
+      alt="baboon"
+      width="80"
+      height="80"
+    />
+    <!-- Site Title -->
+    <span>Chamber of Commerce</span>
+    <!-- Dark Mode Toggle (Optional) -->
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">⚙️</button>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button class="hamburger" id="menu" aria-label="Toggle Menu"></button>
+    <ul class="navigation">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Membership</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <!-- HERO SECTION + CTA -->
+    <section class="hero">
+      <img src="images/civic1.webp" alt="civic1" />
+      <a href="#" class="cta">Join the Chamber</a>
+    </section>
+
+    <!-- CURRENT EVENTS SECTION -->
+    <section class="card events">
+      <h2>Current Events</h2>
+      <ul>
+        <li>Local Business Expo - April 15, 2025</li>
+        <li>Networking Night - May 3, 2025</li>
+        <li>Summer Fest - June 20, 2025</li>
+      </ul>
+    </section>
+
+    <!-- WEATHER CARD SECTION -->
+    <section class="card weather">
+      <h2>Weather</h2>
+      <p>🌤️ 28°C - Partly Cloudy</p>
+      <p>Humidity: 60%</p>
+      <p>Wind: 10 km/h</p>
+    </section>
+
+    <!-- SPOTLIGHTS SECTION -->
+    <section class="card spotlights">
+      <h2>Business Spotlights</h2>
+      <div class="spotlight">
+        <h3>ABC Tech</h3>
+        <p>Leading the way in innovative solutions.</p>
+      </div>
+      <div class="spotlight">
+        <h3>GreenGrocers</h3>
+        <p>Fresh, local produce delivered daily.</p>
+      </div>
+      <div class="spotlight">
+        <h3>EcoBuild</h3>
+        <p>Building a greener future for our city.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- Basic Contact & Project Info -->
+    <p>
+      &copy; 2025 | Emmanuel Chidiebere Nzeh | Lagos, Nigeria <br />
+      WDD 230 - Web Frontend Development
+    </p>
+    <!-- Last Modification -->
+    <p class="last-modified">
+      Last Modification: <span id="lastModified"></span>
+    </p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/chamber.js"></script>
+</body>
+</html>

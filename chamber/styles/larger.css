@@ -1,0 +1,17 @@
+/* larger.css */
+@media (min-width: 768px) {
+    header img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    header span {
+      font-size: 2rem;
+    }
+  
+    .card {
+      margin-bottom: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
