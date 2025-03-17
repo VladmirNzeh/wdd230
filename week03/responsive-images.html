@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230: Web Frontend Development - Responsive Images Activity">
+    <meta name="author" content="Emmanuel Chidiebere Nzeh">
+    <title>Responsive Images Activity</title>
+    <meta property="og:title" content="Emmanuel Chidiebere Nzeh | WDD230: Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vladmirnzeh.github.io/wdd230/images/Nigflag.png">
+    <meta property="og:url" content="https://vladmirnzeh.github.io/wdd230/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="Hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 1000px)">
+                <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2025 | Emmanuel Chidiebere Nzeh | Lagos, Nigeria <br />
+            <img src="images/Nigflag.png" alt="Nigerian Flag" />
+          </p>
+          <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
