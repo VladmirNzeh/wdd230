@@ -5,20 +5,14 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
-
-// DARK MODE TOGGLE FUNCTIONALITY
-const darkModeButton = document.getElementById('darkModeToggle');
-const body = document.body;
-const main = document.querySelector('main');
-
-// Check if user prefers dark mode
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    body.classList.add('dark-mode');
-    main.classList.add('dark-mode');
-}
-
-// Toggle Dark Mode on Button Click
-darkModeButton.addEventListener('click', () => {
+// 2. DARK MODE TOGGLE
+const modeButton = document.querySelector('')
+darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     main.classList.toggle('dark-mode');
-});
+  });
+  
+  // 3. LAST MODIFIED DATE
+  // This ensures the "Last Modification" date is set dynamically.
+  lastModifiedSpan.textContent = document.lastModified;
+  

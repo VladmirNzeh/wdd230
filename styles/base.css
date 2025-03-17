@@ -83,6 +83,10 @@
     text-decoration: underline;
   }
   
+  #darkModeToggle {
+    position: absolute;
+    padding-right: 1rem;
+  }
   
 /* small view navigation */
 #menu {
@@ -117,8 +121,6 @@
 .active::before { 
 	content: "📍";  /* just a wayfinding symbol for the user */
 }
-
-
 
   /* Main */
   main {
