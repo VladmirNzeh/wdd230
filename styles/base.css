@@ -11,17 +11,17 @@
     --highlight-color: #fff; /* White for text highlights */
     --font-family: 'Roboto', sans-serif;
     --max-width: 1200px;
-  }
+}
   
-  /* Reset */
-  * {
+/* Reset */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
   
-  /* Body */
-  body {
+/* Body */
+body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--text-color);
@@ -29,157 +29,183 @@
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 1rem;
-  }
+}
   
-  /* Header */
-  header {
+/* Header */
+header {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--highlight-color);
     padding: 1rem 0;
+    position: relative;
     border-bottom: 4px solid var(--secondary-color);
-  }
+}
   
-  header img {
+header img {
+    position: absolute;
+    left: 1rem; /* Adjusted spacing */
     border-radius: 50%;
     width: 75px;
     height: 75px;
     vertical-align: middle;
     margin-right: 0.5rem;
-  }
+    top: 0;
+}
   
-  header span {
+header span {
     font-size: 1.5rem;
     font-weight: bold;
-  }
+}
   
-  /* Navigation (mobile) */
-  nav {
+/* Navigation */
+nav {
     background-color: var(--secondary-color);
     margin-top: 0.5rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column; /* Vertical on small screens */
-    align-items: center;
-    padding: 0;
-  }
-  
-  nav ul li {
+    justify-content: space-between;
+}
+
+nav ul {
+    display: none; /* Hidden in mobile by default */
+    text-decoration: none;
+    color: var(--highlight-color);
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li {
     margin: 0.5rem 0;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
     color: var(--highlight-color);
     font-size: 1.2rem;
     font-weight: 500;
-  }
-  
-  nav ul li a:hover,
-  nav ul li a.active {
+}
+
+nav ul li a:hover,
+nav ul li a.active {
     text-decoration: underline;
-  }
-  
-  #darkModeToggle {
-    position: absolute;
-    padding-right: 1rem;
-  }
-  
-/* small view navigation */
+}
+
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	padding-top: 2rem;
-	right: 2rem;
+    display: none; /* Hidden by default, shown in mobile */
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "❌";
+    content: "❌";
+}
+
+nav ul.open {
+    display: flex; /* Show links when menu is toggled */
+}
+
+/* Desktop Navigation */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--primary-color);
+    }
+    #menu {
+        display: none; /* Hide hamburger in desktop */
+    }
 }
 
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
-
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
 }
 
 .active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+    content: "📍";  /* Wayfinding symbol for the user */
 }
 
-  /* Main */
-  main {
-    margin-top: 1rem;
-  }
-  
-  /* Title in Main */
-  main h1 {
+/* Main */
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Title in Main */
+main h1 {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-  }
-  
-  /* Card Layout (Mobile) - stacked */
-  .card {
+}
+
+main .overlay {
+    text-align: center;
+    width: 40%; /* Wider for better visibility */
+    position: absolute;
+    top: 18%; /* Improved positioning for both large and small screens */
+    padding: 15px;
+    color: var(--highlight-color);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6); /* Improved overlay visibility */
+}
+
+/* Dark Mode */
+body.dark-mode a:active {
+    color: rgb(202, 195, 195);
+}
+
+body.dark-mode:visited {
+    color: white;
+}
+
+body.dark-mode nav {
+    background-color: var(--primary-color);
+}
+
+/* Card Layout */
+.card {
     background-color: #fff;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 6px;
     border: 1px solid #ccc;
-  }
-  .card h2 {
+}
+
+.card h2 {
     background-color: var(--primary-color);
     color: var(--highlight-color);
     text-align: center;
     padding: 0.3rem 0;
     border-radius: 4px 4px 0 0;
     margin: -1rem -1rem 1rem -1rem;
-  }
-  
-  /* Learning Activities List */
-  .learning-activities ul {
+}
+
+/* Learning Activities List */
+.learning-activities ul {
     list-style: none;
     padding-left: 0;
-    padding: ;
-  }
-  
-  .learning-activities ul li {
+}
+
+.learning-activities ul li {
     margin: 0.5rem 0;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: var(--primary-color);
-    color: var(--highlight-color);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
-    border-top: 4px solid var(--secondary-color);
-  }
-  
-  footer img {
-    width: 30px;
-    vertical-align: middle;
-    margin-left: 0.5rem;
-  }
-  
-  /* Utility classes if needed */
-  .text-sm {
-    font-size: 0.9rem;
-  }
-  
+}
+

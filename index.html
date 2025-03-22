@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
-  week03: <a href="week03/images/landscape (1).webp">Webp</a>
+ <!--week03: <a href="week03/images/landscape (1).webp">Webp</a>-->
   <header>
     <img src="images/vlad.jpg" alt="Vlad" width="75" height="100" />
     <span>Emmanuel Chidiebere Nzeh</span>
@@ -32,13 +32,21 @@
     <ul class="navigation">
       <li><a href="#" class="active">Home</a></li>
       <li><a href="chamber/index.html">Chamber</a></li>
-      <li><a href="#">Form</a></li>
       <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
     </ul>
   </nav>
 
   <main>
-    <h1>WDD230: Web and Frontend Development</h1>
+    <picture>
+      <source srcset="week03/images/hero-small.webp" media="(max-width: 400px)">
+      <source srcset="week03/images/hero-medium.webp" media="(max-width: 750px)">
+      <img loading="lazy" src="week03/images/hero-large.webp" alt="aba temple" width="1000"> 
+    </picture>
+    <div class="overlay">
+      <h3>Aba Temple</h3>
+    </div>
+    <h1>WDD230: Web Frontend Development</h1>
     <section class="card learning-activities">
       <h2>Learning Activities</h2>
       <ul>
@@ -59,6 +67,18 @@
     </section>
   </main>
 
+  <div class="map-container">
+    <iframe
+      title="Map"
+      loading="lazy"
+      src="https://maps.app.goo.gl/SapNaga4TSAcBm3n6"
+      allowfullscreen=""
+      arla-hidden="false"
+      tabindex="0">
+    </iframe>
+  </div>
+</body>
+
   <footer>
     <p>&copy;2025 | Emmanuel Chidiebere Nzeh | Lagos, Nigeria <br />
       <img src="images/Nigflag.png" alt="Nigerian Flag" />
@@ -70,3 +90,5 @@
   <script src="scripts/base.js"></script>
 </body>
 </html>
+
+https://maps.app.goo.gl/SapNaga4TSAcBm3n6
