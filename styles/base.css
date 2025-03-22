@@ -170,6 +170,14 @@ main .overlay {
     background-color: rgba(0, 0, 0, 0.6); /* Improved overlay visibility */
 }
 
+  /* Dark Mode Toggle */
+  #darkModeToggle {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+  }
+
 /* Dark Mode */
 body.dark-mode a {
   color: rgb(202, 195, 195);

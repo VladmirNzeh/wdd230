@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamber of Commerce - WDD230</title>
+  <meta name="description" content="Chamber of Commerce site project for WDD230, developed by Emmanuel Chidiebere Nzeh." />
+  <meta name="author" content="Emmanuel Chidiebere Nzeh" />
+
+  <meta property="og:title" content="Chamber of Commerce - WDD230" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/chamber-hero.jpg" />
+  <meta property="og:url" content="https://example.com" />
+
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">⚙️</button>
+    <nav>
+        <button class="hamburger" id="menu" aria-label="Toggle Menu"></button>
+        <a href="#" class="active">Home</a>
+        <a href="#">Directory</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a> 
+    </nav>  
+  </header>
+
+  <main class="grid-container">
+    <!--side bar section-->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <h2>Visitor Information</h2>
+            <p id="visitMessage">Loading...</p>
+        </div>
+        <div class="sidebar-content">
+            <h2>Demographics</h2>
+            <p>Gender: Male and Female</p>
+            <p>Location: Lagos, Nigeria</p>
+        </div>
+        <div class="sidebar-container">
+            <h2>Events</h2>
+            <ul>
+                <li>Event 1: Concert</li>
+                <li>Event 2: Festival</li>
+                <li>Event 3: Art Exhibition</li>
+            </ul>
+        </div>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">❮</button>
+                <span id="calendarTitle"></span>
+                <button id="nextMonth">❯</button>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-days">
+                    <div>Su</div>
+                    <div>Mo</div>
+                    <div>Tu</div>
+                    <div>We</div>
+                    <div>Th</div>
+                    <div>Fr</div>
+                    <div>Sa</div>
+                </div>
+                <div id="calendarDates" class="calendar-dates"></div>
+            </div>
+        </div>
+        
+    </aside>
+
+    <section class="gallery">
+        <h2>Discover Section</h2>
+        <div class="photo-grid">
+            <figure>
+                <picture>
+                    <img data-src="images/chamber4.webp" loading="lazy" alt="chamber4">
+                </picture>
+                <figcaption>Lagos Cosmopolitan</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img data-src="images/chamber8.webp" loading="lazy" alt="chamber8">
+                </picture>
+                <figcaption>Lagos Metropolitan</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img data-src="images/chamber6.webp" loading="lazy" alt="chamber6">
+                </picture>
+                <figcaption>Lagos Downtown</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img data-src="images/chamber7.webp" loading="lazy" alt="chamber7">
+                </picture>
+                <figcaption>Lagos Eko Bridge</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img data-src="images/chamber9.webp" loading="lazy" alt="chamber9">
+                </picture>
+                <figcaption>Lagos Civic Center</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <img data-src="images/chamber3.webp" loading="lazy" alt="chamber3">
+                </picture>
+                <figcaption>Lagos Expensive Neighborhood </figcaption>
+            </figure>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 | Emmanuel Chidiebere Nzeh | Lagos, Nigeria <br />
+      WDD 230 - Web Frontend Development
+    </p>
+    <p class="last-modified">
+      Last Modification: <span id="lastModified"></span>
+    </p>
+  </footer>
+
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/chamber.js"></script>
+</body>
+</html>
