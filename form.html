@@ -21,7 +21,7 @@
 <body>
  <!--week03: <a href="week03/images/landscape (1).webp">Webp</a>-->
   <header>
-    <img src="images/vlad.jpg" alt="Vlad" width="75" height="100" />
+    <img loading="lazy" src="images/vlad.jpg" alt="Vlad" width="75" height="100" />
     <span>Emmanuel Chidiebere Nzeh</span>
     <button id="darkModeToggle" aria-label="Toggle Dark Mode">⚙️</button>
   </header>
@@ -36,47 +36,29 @@
   </nav>
 
   <main>
-    <picture>
-      <source srcset="week03/images/hero-small.webp" media="(max-width: 400px)">
-      <source srcset="week03/images/hero-medium.webp" media="(max-width: 750px)">
-      <img loading="lazy" src="week03/images/hero-large.webp" alt="aba temple" width="1000"> 
-    </picture>
-    <div class="overlay">
-      <h3>Aba Temple</h3>
-    </div>
-    <h1>WDD230: Web Frontend Development</h1>
-    <section class="card learning-activities">
-      <h2>Learning Activities</h2>
-      <ul>
-        <li>Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
-        <li>Week 02:</li>
-        <li>Week 03:</li>
-        <li>Week 04:</li>
-        <li>Week 05:</li>
-        <li>Week 06:</li>
-      </ul>
-    </section>
+    <form action="record.html" method="get" id="user-form">
+        <h1>Web Lab - Form Validation</h1>
 
-    <section class="card information">
-      <h2>Information</h2>
-      <p>Lagos, Nigeria</p>
-      <p>🌞 46°C - Sunshine</p>
-      <p>Page Visits: <span id="visits">0</span></p>
-    </section>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 alphanumeric characters">
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span id="password-error" style="color: red; display: none;">Passwords do not match</span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid byui.edu email address">
+
+        <label for="rating">Page Rating:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('rating-value').innerText = this.value">
+        <span id="rating-value">5</span>
+
+        <button type="submit">Submit</button>
+    </form>
   </main>
-
-  <div class="map-container">
-   <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d253656.19548335992!2d3.316026108972809!3d6.599850654290836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1742613048762!5m2!1sen!2sng" 
-    width="600" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-   </iframe>
-  </div>
-</body>
 
   <footer>
     <p>&copy;2025 | Emmanuel Chidiebere Nzeh | Lagos, Nigeria <br />
@@ -90,4 +72,3 @@
 </body>
 </html>
 
-https://maps.app.goo.gl/SapNaga4TSAcBm3n6
