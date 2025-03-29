@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamber of Commerce - Join Us</title>
+  <meta name="description" content="Join the Chamber of Commerce - Membership Form for WDD230, developed by Emmanuel Chidiebere Nzeh." />
+  <meta name="author" content="Emmanuel Chidiebere Nzeh" />
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Chamber of Commerce - Join Us" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/chamber1.webp" />
+  <meta property="og:url" content="https://example.com/chamber/join.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- CSS: Normalize, Base, Larger, and Additional Styles for Join Page -->
+  <link rel="stylesheet" href="../styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- Fonts Preconnect & Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <!-- Chamber Logo (Placeholder) -->
+    <img loading="lazy" src="images/chamber1.webp" alt="Chamber1" width="80" height="80" />
+    <!-- Site Title -->
+    <span>Chamber of Commerce</span>
+    <!-- Dark Mode Toggle (Optional) -->
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">⚙️</button>
+    <nav>
+      <button class="hamburger" id="menu" aria-label="Toggle Menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="discover.html">Events</a></li>
+        <li><a href="join.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Join the Chamber of Commerce</h2>
+      <div class="grid-container">
+        <!-- Membership Types & Benefits -->
+        <div class="membership-types">
+          <h3>Select Membership Type</h3>
+          <div class="membership-grid">
+            <button type="button" class="membership-btn" data-membership="np" data-cost="$0"
+              data-benefits="Access to networking events, basic listing on the chamber directory.">
+              NP Membership (Non-Profit)
+            </button>
+            <button type="button" class="membership-btn" data-membership="bronze" data-cost="$50/month"
+              data-benefits="All NP benefits + discounted event tickets, training sessions.">
+              Bronze Membership
+            </button>
+            <button type="button" class="membership-btn" data-membership="silver" data-cost="$100/month"
+              data-benefits="All bronze benefits + advertising on chamber homepage, spotlight feature.">
+              Silver Membership
+            </button>
+            <button type="button" class="membership-btn" data-membership="gold" data-cost="$200/month"
+              data-benefits="All silver benefits + priority event access, premium ad placements.">
+              Gold Membership
+            </button>
+          </div>
+        </div>
+        <div class="membership-benefits" id="membershipBenefits">
+          <h3>Membership Benefits</h3>
+          <p id="benefitDescription">Click a membership to see benefits.</p>
+        </div>
+      </div>
+
+      <!-- Membership Form -->
+      <div class="form-container" id="formContainer">
+        <form action="thankyou.html" method="get" id="membershipForm">
+          <label for="firstName">First Name:
+            <input type="text" id="firstName" name="firstName" required>
+          </label>
+          <label for="lastName">Last Name:
+            <input type="text" id="lastName" name="lastName" required>
+          </label>
+          <label for="position">Title/Position (min. 7 characters; letters, hyphens, and spaces only):
+            <input type="text" id="position" name="position" required pattern="^[A-Za-z\s-]{7,}$" title="Please enter at least 7 letters, hyphens, or spaces.">
+          </label>
+          <label for="email">Email:
+            <input type="email" id="email" name="email" required placeholder="example@byui.edu">
+          </label>
+          <label for="phone">Mobile Phone:
+            <input type="tel" id="phone" name="phone" required>
+          </label>
+          <label for="orgName">Business/Organization Name:
+            <input type="text" id="orgName" name="orgName" required>
+          </label>
+          <label for="membership">Membership Level:
+            <select id="membership" name="membership" required>
+              <option value="">--Select Membership Level--</option>
+              <option value="np">NP Membership (Non-Profit) - $0</option>
+              <option value="bronze">Bronze Membership - $50/month</option>
+              <option value="silver">Silver Membership - $100/month</option>
+              <option value="gold">Gold Membership - $200/month</option>
+            </select>
+          </label>
+          <label for="orgDesc">Business/Organization Description:
+            <textarea id="orgDesc" name="orgDesc" rows="4"></textarea>
+          </label>
+          <!-- Hidden Timestamp Field -->
+          <input type="hidden" id="timestamp" name="timestamp">
+          <input type="submit" value="Submit Application">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 | Emmanuel Chidiebere Nzeh | Lagos, Nigeria <br />
+      WDD 230 - Web Frontend Development
+    </p>
+    <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/chamber.js"></script>
+  <script src="scripts/join.js"></script>
+</body>
+</html>
