@@ -1,0 +1,48 @@
+{
+    "familyName": "Nzeh",
+    "moveInDate": "4-3-2025",
+    "numberOfRecords": 8,
+    "visitedByBishopric": "false",
+    "familyMembers": [
+        {
+            "name": "John Nzeh",
+            "gender": "Male",
+            "birthDate": "9-8-1967"
+        },
+        {
+            "name": "Blessing Nzeh",
+            "gender": "Female",
+            "birthDate": "8-8-1982"
+        },
+        {
+            "name": "Glory Nzeh",
+            "gender": "Female",
+            "birthDate": "5-8-1990"
+        },
+        {
+            "name": "Mercy Nzeh",
+            "gender": "Female",
+            "birthDate": "5-9-1992"
+        },
+        {
+            "name": "Stella Nzeh",
+            "gender": "Female",
+            "birthDate": "5-9-1992"
+        },
+        {
+            "name": "Samuel Nzeh",
+            "gender": "Male",
+            "birthDate": "7-6-1994"
+        },
+        {
+            "name": "Emmanuel Nzeh",
+            "gender": "Male",
+            "birthDate": "11-9-1996"
+        },
+        {
+            "name": "Esther Nzeh",
+            "gender": "Female",
+            "birthDate": "9-9-1998"
+        }
+    ]
+}
