@@ -1,0 +1,61 @@
+{
+    "members": [
+      {
+        "name": "ABC Tech",
+        "address": "123 Tech Road, Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://abctech.ng",
+        "image": "abc-tech.png",
+        "membership": "Gold"
+      },
+      {
+        "name": "GreenGrocers",
+        "address": "45 Farm Lane, Lagos",
+        "phone": "+234 802 345 6789",
+        "website": "https://greengrocers.ng",
+        "image": "greengrocers.png",
+        "membership": "Silver"
+      },
+      {
+        "name": "EcoBuild",
+        "address": "88 Eco Avenue, Lagos",
+        "phone": "+234 803 456 7890",
+        "website": "https://ecobuild.ng",
+        "image": "ecobuild.png",
+        "membership": "Bronze"
+      },
+      {
+        "name": "DevSpark",
+        "address": "16 Innovation Rd, Lagos",
+        "phone": "+234 804 567 8901",
+        "website": "https://devspark.ng",
+        "image": "devspark.png",
+        "membership": "Gold"
+      },
+      {
+        "name": "HealthPrime",
+        "address": "12 Wellness St, Lagos",
+        "phone": "+234 805 678 9012",
+        "website": "https://healthprime.ng",
+        "image": "healthprime.png",
+        "membership": "Silver"
+      },
+      {
+        "name": "Lagos Logistics",
+        "address": "101 Cargo Blvd, Lagos",
+        "phone": "+234 806 789 0123",
+        "website": "https://lagoslogistics.ng",
+        "image": "lagoslogistics.png",
+        "membership": "Bronze"
+      },
+      {
+        "name": "EduNext",
+        "address": "202 Edu St, Lagos",
+        "phone": "+234 807 890 1234",
+        "website": "https://edunext.ng",
+        "image": "edunext.png",
+        "membership": "Gold"
+      }
+    ]
+  }
+  

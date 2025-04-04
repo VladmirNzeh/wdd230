@@ -58,48 +58,14 @@
   </nav>
 
   <!-- MAIN CONTENT -->
-  <main class="main-content">
-    <!-- HERO SECTION + CTA -->
-    <section class="hero">
-      <img src="images/civic1.webp" alt="civic1" />
-      <a href="#" class="cta">Join the Chamber</a>
-    </section>
-
-    <!-- CURRENT EVENTS SECTION -->
-    <section class="card events">
-      <h2>Current Events</h2>
-      <ul>
-        <li>Local Business Expo - April 15, 2025</li>
-        <li>Networking Night - May 3, 2025</li>
-        <li>Summer Fest - June 20, 2025</li>
-      </ul>
-    </section>
-
-    <!-- WEATHER CARD SECTION -->
-    <section class="card weather">
-      <h2>Weather</h2>
-      <p>🌤️ 28°C - Partly Cloudy</p>
-      <p>Humidity: 60%</p>
-      <p>Wind: 10 km/h</p>
-    </section>
-
-    <!-- SPOTLIGHTS SECTION -->
-    <section class="card spotlights">
-      <h2>Business Spotlights</h2>
-      <div class="spotlight">
-        <h3>ABC Tech</h3>
-        <p>Leading the way in innovative solutions.</p>
-      </div>
-      <div class="spotlight">
-        <h3>GreenGrocers</h3>
-        <p>Fresh, local produce delivered daily.</p>
-      </div>
-      <div class="spotlight">
-        <h3>EcoBuild</h3>
-        <p>Building a greener future for our city.</p>
-      </div>
-    </section>
+  <main class="directory-content">
+    <div class="view-toggle">
+      <button id="grid-view" class="active">🔳 Grid</button>
+      <button id="list-view">📋 List</button>
+    </div>
+    <div id="member-directory" class="grid"></div>
   </main>
+  
 
   <!-- FOOTER -->
   <footer>
@@ -117,5 +83,6 @@
   <!-- SCRIPTS -->
   <script src="scripts/getDates.js"></script>
   <script src="scripts/chamber.js"></script>
+  <script src="scripts/directory.js"></script>
 </body>
 </html>
