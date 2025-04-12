@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamber of Commerce - homepage</title>
+  <meta name="description" content="Chamber of Commerce site project for WDD230, developed by Emmanuel Chidiebere Nzeh." />
+  <meta name="author" content="Emmanuel Chidiebere Nzeh" />
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Chamber of Commerce - WDD230" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/chamber-hero.jpg" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- CSS: Normalize First, Then Base Styles -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- Fonts Preconnect & Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- Chamber Logo (Placeholder) -->
+    <img
+      src="images/chamber1.webp"
+      alt="chamber1"
+      width="80"
+      height="80"
+    />
+    <!-- Site Title -->
+    <span>Chamber of Commerce</span>
+    <!-- Dark Mode Toggle (Optional) -->
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">⚙️</button>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button class="hamburger" id="menu" aria-label="Toggle Menu"></button>
+    <ul class="navigation">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">About</a></li>
+      <li><a href="discover.html">Events</a></li>
+      <li><a href="join.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <img src="images/hero.jpeg" alt="hero image">
+    <div class="intro">
+        <h1><b>Chamber of Commerce in Lagos, Nigeria</b></h1>
+        <p><b>Looking to start a new business?</b></p>
+        <a href="join.html">Join</a>
+    </div>
+
+    <div id="meet-greet-banner"></div>
+
+    <section class="events">
+        <div>
+            <h2>Current Events</h2>
+            <a href="discover.html"><img src="images/chamber9.webp" alt="chamber9"></a>
+            
+        </div>
+    </section>
+
+    <section class="weather">
+        <h2>Weather</h2>
+            <p id="weather-description">Current weather description</p>
+            <p id="weather-temperature">Current temperature: 0&deg;F</p>
+            <img id="weather-icon" src="#" alt="Weather icon">
+
+        <div class="forecast">
+            <h2>Forecast</h2>
+            <p></p> <!-- Current temperature will be inserted here -->
+            <p></p> <!-- Weather description will be inserted here -->
+            <img src="#" alt="forecast icon"> <!-- Icon for current weather -->
+            <div class="forecast"></div> <!-- Container for the 3-day forecast -->
+        </div>
+    </section>
+
+    <section class="advertisement">
+        <h2>Spotlight on Chamber Members</h2>
+        <div id="chamber-members"></div> <!-- This will be filled dynamically with JSON data -->
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- Basic Contact & Project Info -->
+    <p>
+      &copy; 2025 | Emmanuel Chidiebere Nzeh | Lagos, Nigeria <br />
+      WDD 230 - Web Frontend Development
+    </p>
+    <!-- Last Modification -->
+    <p class="last-modified">
+      Last Modification: <span id="lastModified"></span>
+    </p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="scripts/getDates.js"></script>
+  <script src="../scripts/weather.js"></script>
+  <script src="scripts/forecast.js"></script>
+  <script src="scripts/meetGreet.js"></script>
+  <script src="scripts/chamberMembers.js"></script>
+  <script src="scripts/chamber.js"></script>
+  <script src="scripts/directory.js"></script>
+</body>
+</html>
