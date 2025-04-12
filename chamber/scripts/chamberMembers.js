@@ -14,7 +14,7 @@ async function fetchChamberMembers() {
       throw Error(await response.text());
     }
     const membersData = await response.json();
-    displayChamberMembers(membersData);
+    displayChamberMembers(membersData.members);
   } catch (error) {
     console.error("Error fetching chamber members data:", error);
   }
