@@ -30,8 +30,10 @@ function displayChamberMembers(members) {
     // If the member has an image, create an image element and add it to the card.
     if (member.image) {
       const img = document.createElement('img');
-      img.setAttribute('src', member.image);
-      img.setAttribute('alt', member.name);
+      img.src = `images/$(member.image)`;
+      img.alt = `$(member.name) logo`;
+      img.loading = 'lazy'; // Lazy load the image for better performance.
+      img.classList.add('member-image');
       memberCard.appendChild(img);
     }
 
